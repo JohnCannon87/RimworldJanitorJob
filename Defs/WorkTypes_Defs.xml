@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <WorkTypeDef>
+        <defName>Janitorial</defName>
+        <labelShort>Janitorial</labelShort>
+        <pawnLabel>Janitorial</pawnLabel>
+        <gerundLabel>janitorial</gerundLabel>
+        <description>Fix damaged or broken-down buildings.</description>
+        <verb>Janitorial</verb>
+        <naturalPriority>350</naturalPriority>
+        <requireCapableColonist>true</requireCapableColonist>
+        <relevantSkills>
+            <li>Construction</li>
+        </relevantSkills>
+        <workTags>
+            <li>ManualSkilled</li>
+        </workTags>
+    </WorkTypeDef>
+
+    <WorkGiverDef>
+        <defName>Repair_Janitor</defName>
+        <label>repair damaged things</label>
+        <giverClass>WorkGiver_Repair</giverClass>
+        <workType>Janitorial</workType>
+        <priorityInType>90</priorityInType>
+        <verb>repair</verb>
+        <gerund>repairing</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <nonColonistsCanDo>true</nonColonistsCanDo>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>FixBrokenDownBuilding_Janitor</defName>
+        <label>fix broken-down buildings</label>
+        <giverClass>WorkGiver_FixBrokenDownBuilding</giverClass>
+        <workType>Janitorial</workType>
+        <priorityInType>80</priorityInType>
+        <verb>replace broken components in</verb>
+        <gerund>replacing broken components in</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>FluffyBreakdowns_Maintenance_Janitor</defName>
+        <label>maintain components</label>
+        <giverClass>Fluffy_Breakdowns.WorkGiver_Maintenance</giverClass>
+        <priorityInType>70</priorityInType>
+        <workType>Janitorial</workType>
+        <emergency>false</emergency>
+        <verb>maintain</verb>
+        <gerund>maintaining</gerund>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>RearmTurrets_Janitor</defName>
+        <label>rearm turrets</label>
+        <giverClass>WorkGiver_Refuel_Turret</giverClass>
+        <workType>Janitorial</workType>
+        <verb>rearm</verb>
+        <gerund>rearming</gerund>
+        <priorityInType>60</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>Refuel_Janitor</defName>
+        <label>refuel fuelable buildings</label>
+        <giverClass>WorkGiver_Refuel</giverClass>
+        <workType>Janitorial</workType>
+        <verb>refuel</verb>
+        <gerund>refueling</gerund>
+        <priorityInType>50</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+        <prioritizeSustains>true</prioritizeSustains>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>HaulGeneral_Janitor</defName>
+        <label>haul general things</label>
+        <giverClass>WorkGiver_HaulGeneral</giverClass>
+        <workType>Janitorial</workType>
+        <verb>haul</verb>
+        <gerund>hauling</gerund>
+        <priorityInType>40</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>HaulMerge_Janitor</defName>
+        <label>merge things</label>
+        <giverClass>WorkGiver_Merge</giverClass>
+        <workType>Janitorial</workType>
+        <verb>merge</verb>
+        <gerund>merging</gerund>
+        <priorityInType>30</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>CleanFilth_Janitor</defName>
+        <label>clean filth</label>
+        <giverClass>WorkGiver_CleanFilth</giverClass>
+        <workType>Janitorial</workType>
+        <verb>clean</verb>
+        <gerund>cleaning</gerund>
+        <priorityInType>20</priorityInType>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+    <WorkGiverDef>
+        <defName>CleanClearSnow_Janitor</defName>
+        <label>clear snow</label>
+        <giverClass>WorkGiver_ClearSnow</giverClass>
+        <workType>Janitorial</workType>
+        <verb>clear snow</verb>
+        <gerund>clearing snow</gerund>
+        <priorityInType>10</priorityInType>
+        <scanThings>false</scanThings>
+        <scanCells>true</scanCells>
+        <requiredCapacities>
+            <li>Manipulation</li>
+        </requiredCapacities>
+    </WorkGiverDef>
+
+</Defs>
