@@ -6,8 +6,9 @@
 	<supportedVersions>
 		<li>1.0</li>
 		<li>1.1</li>
+		<li>1.2</li>
 	</supportedVersions>
-	<description><![CDATA[Adds a Janitor Job that maintains components, hauls and cleans in that order. Won't haul to buleprints, haul corpses places or many other things as their union said no.
+	<description><![CDATA[Adds a Janitor Job that maintains components, hauls and cleans in that order. Won't haul to blueprints, haul corpses places or many other things as their union said no.
 		
 		Requires Fluff Breakdowns https://steamcommunity.com/sharedfiles/filedetails/?id=726244033 in order for the component maintainance to work.
 		]]></description>
